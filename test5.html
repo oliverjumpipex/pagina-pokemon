@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macetas Pokémon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6d6; /* Color de fondo café claro */
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50; /* Negro oscuro */
+            color: #ecf0f1; /* Blanco grisáceo */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .section h2 {
+            color: #6f4f28; /* Color café oscuro */
+            border-bottom: 2px solid #6f4f28;
+            padding-bottom: 10px;
+        }
+        .catalog-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #2c3e50; /* Negro oscuro */
+            color: #ecf0f1; /* Blanco grisáceo */
+            text-align: center;
+            padding: 10px 0;
+        }
+        .social-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #6f4f28; /* Color café oscuro */
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #8e6e4f; /* Café más claro */
+        }
+        .payment-process {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Macetas Pokémon</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#redes-sociales">Redes Sociales</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="inicio" class="section">
+            <h2>Bienvenido a Macetas Pokémon</h2>
+            <p>Descubre nuestras exclusivas macetas de cemento con forma de tus Pokémon favoritos. Diseñadas para darle un toque único y divertido a tu hogar o jardín.</p>
+        </section>
+
+        <section id="catalogo" class="section">
+            <h2>Catálogo de Productos</h2>
+            <div class="catalog-item">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <a href="https://ibb.co/4gsSdcg"><img src="https://i.ibb.co/x8mgHy8/imagen.jpg" alt="imagen" border="0"></a>Maceta Concreto Diseño Pokemon
+                    <h3>Modelo Cubone</h3>
+                    <p>Descripción breve del producto. Perfecta para decorar tu jardín.</p>
+                    <p><strong>Precio: $5,000 CLP</strong></p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/TBy9YNr/togepi.png" alt="togepi" border="0"></a>Maceta Concreto Diseño Pokemon
+                    <h3>Modelo Togepi</h3>
+                    <p>Descripción breve del producto. Ideal para interiores.</p>
+                    <p><strong>Precio: $5,000 CLP</strong></p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <a href="https://ibb.co/4gsSdcg"><img src="https://i.ibb.co/x8mgHy8/imagen.jpg" alt="imagen" border="0"></a>Maceta Concreto Diseño Pokemon
+
+                    <h3>Modelo Squartl</h3>
+                    <p>Descripción breve del producto. Añade un toque especial a tu hogar.</p>
+                    <p><strong>Precio: $5,000 CLP</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa apasionada por el diseño y la naturaleza. Nuestras macetas de cemento con forma de Pokémon están hechas con materiales de alta calidad y atención al detalle. Queremos ofrecerte productos únicos que alegren tus espacios.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="redes-sociales" class="section">
+            <h2>Redes Sociales</h2>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </section>
+
+        <section id="proceso-pago" class="section payment-process">
+            <h2>Proceso de Pago</h2>
+            <p>Para realizar una compra, selecciona el producto deseado, añade al carrito y procede a pagar utilizando uno de los métodos disponibles. Aceptamos pagos con tarjeta de crédito y débito, así como transferencias bancarias.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Macetas Pokémon. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
